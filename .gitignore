@@ -55,5 +55,6 @@ docs/_build/
 # Project Specific
 .vagrant
 .idea
-*/media/*
+media/*
+static/*
 
