@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<body style="background-color: rgba({{clock.backgroundColor}});">
+
+    <object data="{% static "clocks/station-clock.svg" %}" type="image/svg+xml" width="100%" height="100%">
+      <param name="dial"               value="{{clock.dial}}"/>
+      <param name="hourHand"           value="{{clock.hourHand}}"/>
+      <param name="minuteHand"         value="{{clock.minuteHand}}"/>
+      <param name="secondHand"         value="{{clock.secondHand}}"/>
+      <param name="minuteHandBehavior" value="{{clock.minuteHandBehavior}}"/>
+      <param name="secondHandBehavior" value="{{clock.secondHandBehavior}}"/>
+      <param name="secondHandStopToGo" value="{{clock.secondHandStopToGo}}"/>
+      <param name="secondHandStopTime" value="{{clock.secondHandStopTime}}"/>
+      <param name="backgroundColor"    value="rgba({{clock.backgroundColor}})"/>
+      <param name="dialColor"          value="rgb({{clock.dialColor}})"/>
+      <param name="hourHandColor"      value="rgb({{clock.hourHandColor}})"/>
+      <param name="minuteHandColor"    value="rgb({{clock.minuteHandColor}})"/>
+      <param name="secondHandColor"    value="rgb({{clock.secondHandColor}})"/>
+      <param name="axisCoverColor"     value="rgb({{clock.axisCoverColor}})"/>
+      <param name="axisCoverRadius"    value="{{clock.axisCoverRadius}}"/>
+      <param name="updateInterval"     value="{{clock.updateInterval}}"/>
+    </object>
+
+</body>
